@@ -1,6 +1,6 @@
 const hre = require("hardhat");
 const { string } = require('hardhat/internal/core/params/argumentTypes');
-require("./beneficiary")
+require("../beneficiary")
 
 
 function sleep(ms) {
@@ -27,7 +27,7 @@ async function main() {
             }
         }
         console.log('Taking a break...');
-        sec = await sleep(1200000);
+        sec = await sleep(300000);
         console.log('120 seconds later continue...');
     };
 }

@@ -1,6 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("./accountsList")
-require("./beneficiary")
+require("./accountsList");
+require("./beneficiary");
 
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -11,7 +11,6 @@ module.exports = {
     },
     mainnet: {
       url: "https://mainnet.infura.io/v3/" + infuraKey,
-      // accounts: accounts
       accounts: accounts
     }
   }
